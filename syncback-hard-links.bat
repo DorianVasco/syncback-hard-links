@@ -64,8 +64,8 @@ echo %lastfolder%
 echo Dateien kopieren...
 echo mkdir %windest%
 mkdir %windest%
-echo rsync -ah --delete --ignore-existing --progress --link-dest="%lastfolder%" "%lastfolder%/" "%dest%"
-rsync -ah --delete --ignore-existing --progress --link-dest="%lastfolder%" "%lastfolder%/" "%dest%"
+echo rsync -avh --delete --ignore-existing --progress --link-dest="%lastfolder%" "%lastfolder%/" "%dest%"
+rsync -avh --delete --ignore-existing --progress --link-dest="%lastfolder%" "%lastfolder%/" "%dest%"
 
 echo Warte 20 Sek...
-::ping localhost -n 20 >NUL
+ping localhost -n 20 >NUL
