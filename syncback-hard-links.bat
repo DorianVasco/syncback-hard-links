@@ -67,5 +67,8 @@ mkdir %windest%
 echo rsync -avh --delete --ignore-existing --progress --link-dest="%lastfolder%" "%lastfolder%/" "%dest%"
 rsync -avh --delete --ignore-existing --progress --link-dest="%lastfolder%" "%lastfolder%/" "%dest%"
 
-echo Warte 20 Sek...
-ping localhost -n 20 >NUL
+
+::echo Warte 20 Sek...
+::ping localhost -n 20 >NUL
+:EOF
+pause
